@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        div{
+            display: flex;
+            /* 默认主轴是x轴，沿着row排列   还有row-reverse,column*/
+            flex-direction: row;
+            /* width: 80%;
+            height: 300px; */
+            width: 600px;
+            height: 400px;
+            background-color: antiquewhite;
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            /* align-content: center; */
+            /* align-content: space-between; */
+            align-content: space-around;
+            /* justify-self: start;,这是默认的排列方式 */
+            /* justify-content 属性定义了主轴上子元素的排列方式 */
+            /* center可以居中对齐，space-around会平分剩余空间 */
+            /* justify-content: space-between,先两边贴边，然后平分剩余空间 */
+            /* justify-content: center; */
+            /* justify-content: center;
+            flex-wrap: wrap; */
+            /* align-items:属性定义了在侧轴上子元素的排列方式 */
+            /* center flex-start flex-end center,center则是表示垂直居中表示 */
+            /* align-content: 设置侧轴上的子元素的排列方式
+            设置子项在侧轴上的排列方式，并且只能用于子项出现换行的情况 */
+            /* align-content: 的属性有flex-start,flex-end,center,space-between,space-around,stretch */
+            /* align-items: flex-end; */
+
+            /* 设置主轴方向和是否换行可以简写 */
+            /* flex-direction: column;
+            flex-wrap:wrap;
+            flex-flow: column wrap; */
+        }
+        /* flex 默认是一行显示，如果显示不下则会自动修改子类孩子的宽度 */
+        /* flex-wrap设置子元素是否换行，默认是不换行 */
+        /* flex-wrap属性 nowrap 默认不换行，wrap 会换行 */
+        div span{
+            width: 150px;
+            height: 100px;
+            background-color: pink;
+            margin: 5px;
+
+        }
+
+
+        /* 总结：
+        flex-direction设置主轴方向
+        justify-content主轴上子元素的排列方式
+        flex-wrap表示是否换行
+        align-content侧轴上多行子元素的排列方式
+        align-items侧轴上单行子元素的排列方式
+        flex-flow表示flex-direction,flex-wrap的简写方式 */
+    </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+    </div>
+</body>
+</html>
